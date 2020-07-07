@@ -13,7 +13,6 @@ if [ ! -z "$command" ]
 then
 	IFS=' ' read -r id login <<< "$command"
 	#echo $id." foundn logging into SSH now..."
-	echo $login
 	$login
 else
 	echo "invalid website name"
