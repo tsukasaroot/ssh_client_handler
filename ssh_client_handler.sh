@@ -12,7 +12,7 @@ echo "Looking for $1..."
 if [ ! -z "$command" ]
 then
 	IFS=' ' read -r id login <<< "$command"
-	#echo $id." foundn logging into SSH now..."
+	echo $id." found logging into SSH now..."
 	$login
 else
 	echo "invalid website name"
